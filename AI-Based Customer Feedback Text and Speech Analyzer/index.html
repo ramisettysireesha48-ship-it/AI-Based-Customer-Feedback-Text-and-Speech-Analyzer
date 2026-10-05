@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Customer Feedback Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <span>AI</span> Feedback Analyzer
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#analyzer">Analyzer</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="tag">AI-POWERED CUSTOMER INSIGHTS</p>
+
+            <h1>
+                Understand Your
+                <span>Customers Better</span>
+            </h1>
+
+            <p>
+                Analyze customer feedback using text and speech.
+                Discover sentiment, emotions and important keywords
+                in seconds.
+            </p>
+
+            <a href="#analyzer" class="hero-button">
+                Start Analysis
+            </a>
+
+        </div>
+
+        <div class="hero-card">
+
+            <div class="mini-card">
+                <h3>😊 Positive</h3>
+                <p>Customer Satisfaction</p>
+            </div>
+
+            <div class="mini-card">
+                <h3>🎤 Speech</h3>
+                <p>Voice Feedback</p>
+            </div>
+
+            <div class="mini-card">
+                <h3>📊 Insights</h3>
+                <p>Smart Analysis</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Analyzer Section -->
+    <section class="analyzer-section" id="analyzer">
+
+        <div class="section-title">
+            <p>SMART ANALYSIS</p>
+            <h2>Customer Feedback Analyzer</h2>
+            <span>
+                Enter feedback manually or use your voice.
+            </span>
+        </div>
+
+
+        <div class="analyzer-container">
+
+            <!-- Input Area -->
+            <div class="input-card">
+
+                <h3>Customer Feedback</h3>
+
+                <textarea
+                    id="feedbackInput"
+                    placeholder="Type customer feedback here..."
+                ></textarea>
+
+
+                <div class="button-group">
+
+                    <button
+                        class="analyze-btn"
+                        onclick="analyzeFeedback()">
+                        🔍 Analyze Feedback
+                    </button>
+
+                    <button
+                        class="voice-btn"
+                        onclick="startSpeechRecognition()">
+                        🎤 Speak
+                    </button>
+
+                    <button
+                        class="clear-btn"
+                        onclick="clearFeedback()">
+                        Clear
+                    </button>
+
+                </div>
+
+                <p id="voiceStatus" class="voice-status"></p>
+
+            </div>
+
+
+            <!-- Result Area -->
+            <div class="result-card">
+
+                <h3>Analysis Results</h3>
+
+                <div class="result-item">
+
+                    <div>
+                        <small>Sentiment</small>
+                        <h4 id="sentiment">Waiting...</h4>
+                    </div>
+
+                    <div class="result-icon">
+                        😊
+                    </div>
+
+                </div>
+
+
+                <div class="result-item">
+
+                    <div>
+                        <small>Emotion</small>
+                        <h4 id="emotion">Waiting...</h4>
+                    </div>
+
+                    <div class="result-icon">
+                        ❤️
+                    </div>
+
+                </div>
+
+
+                <div class="result-item">
+
+                    <div>
+                        <small>Feedback Score</small>
+                        <h4 id="score">--</h4>
+                    </div>
+
+                    <div class="result-icon">
+                        ⭐
+                    </div>
+
+                </div>
+
+
+                <div class="keywords">
+
+                    <h4>Important Keywords</h4>
+
+                    <div id="keywordList">
+                        <span>Waiting for analysis</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section class="features" id="about">
+
+        <div class="section-title">
+
+            <p>FEATURES</p>
+
+            <h2>Powerful Feedback Analysis</h2>
+
+        </div>
+
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">📝</div>
+
+                <h3>Text Analysis</h3>
+
+                <p>
+                    Analyze written customer feedback and identify
+                    the overall sentiment.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">🎤</div>
+
+                <h3>Speech Analysis</h3>
+
+                <p>
+                    Convert customer voice feedback into text using
+                    speech recognition.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">😊</div>
+
+                <h3>Emotion Detection</h3>
+
+                <p>
+                    Identify basic emotions such as happiness,
+                    anger, sadness and satisfaction.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">📊</div>
+
+                <h3>Customer Insights</h3>
+
+                <p>
+                    Extract useful keywords and generate a simple
+                    customer feedback score.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>AI Customer Feedback Analyzer</h3>
+
+        <p>
+            AI-powered text and speech feedback analysis system.
+        </p>
+
+        <p class="copyright">
+            © 2026 Customer Feedback Analyzer
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
